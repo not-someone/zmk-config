@@ -117,7 +117,7 @@
             timeout-ms = <50>;
 			layers = <MOU>;
             key-positions = <30 31>;
-            bindings = <&mkp MCLK)>;
+            bindings = <&mkp MCLK>;
         };
 	};
 	
