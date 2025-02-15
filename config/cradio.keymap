@@ -153,7 +153,7 @@
 
         layer_MOU {
             bindings = <
-                &msc SCRL_UP    &msc SCRL_LEFT   &mmv MOVE_UP    &msc SCRL_RIGT   &kt MOU          &none          &kp LGUI(DOWN)   &kp LA(ESC)  &kp LGUI(UP)  &kp LC(W)
+                &msc SCRL_UP    &msc SCRL_LEFT   &mmv MOVE_UP    &msc SCRL_RIGHT  &kt MOU          &none          &kp LGUI(DOWN)   &kp LA(ESC)  &kp LGUI(UP)  &kp LC(W)
                 &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER        &bootloader    &kp RSHIFT       &kp RCTRL    &kp RALT      &kp RGUI
                 &kp LC(Z)       &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(LS(V))    &none          &none            &none        &none         &kp LC(F4)
                                                                  &mkp LCLK        &mkp RCLK        &none          &none
