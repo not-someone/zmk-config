@@ -147,7 +147,7 @@
             bindings = <
                 &msc SCRL_UP      &msc SCRL_LEFT       &mmv MOVE_UP       &msc SCRL_RIGHT  &mkp MCLK        &none          &kp LG(DOWN)     &kp LA(ESC)  &kp LG(UP)    &kp LC(W)
                 &msc SCRL_DOWN    &mmv MOVE_LEFT       &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &kp ENTER        &bootloader    &kp RSHIFT       &kp RCTRL    &kp RALT      &kp RGUI
-                &kp LC(Z)         &kp LC(X)            &kp LC(C)          &kp LC(V)        &kp LC(LS(V))    &tog MOU       &none            &none        &none         &kp LC(F4)
+                &kp LC(Z)         &kp LC(X)            &kp LC(C)          &kp LC(V)        &kp LC(LS(V))    &tog MOU       &none            &none        &none         &kp LA(F4)
                                                                           &mkp LCLK        &mkp RCLK        &none          &none
             >;
         };
