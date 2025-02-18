@@ -114,6 +114,21 @@
             key-positions = <0 10>;
             bindings = <&kp LGUI(LC(LEFT))>;
         };
+
+        compatible = "zmk,combos";
+        combo_tog_mouse {
+            timeout-ms = <50>;
+            key-positions = <4 14>;
+            bindings = <&tog MOU>;
+        };
+
+        compatible = "zmk,combos";
+        combo_mouse_mclick {
+            timeout-ms = <50>;
+	    layers = <3>;
+            key-positions = <30 31>;
+            bindings = <&mkp MCLK>;
+        };
     };
 	
     keymap {
@@ -141,7 +156,7 @@
             bindings = <
                 &kp PG_UP    &kp HOME    &kp UP      &kp END      &kp INS       &none    &kp LC(LS(TAB))   &kp LA(ESC)   &kp LC(TAB)   &kp LC(T)
                 &kp PG_DN    &kp LEFT    &kp DOWN    &kp RIGHT    &kp CAPS      &none    &kp RSHIFT        &kp RCTRL     &kp RALT      &kp RGUI
-                &kp LC(Z)    &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(LS(V)) &tog MOU &none             &none         &none         &kp LC(N)
+                &kp LC(Z)    &kp LC(X)   &kp LC(C)   &kp LC(V)    &kp LC(LS(V)) &none    &none             &none         &none         &kp LC(N)
                                                      &kp BSPC     &kp ENTER     &none    &none
             >;
         };
