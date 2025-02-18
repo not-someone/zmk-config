@@ -1,9 +1,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
@@ -120,14 +117,6 @@
             timeout-ms = <50>;
             key-positions = <4 14>;
             bindings = <&tog MOU>;
-        };
-
-        compatible = "zmk,combos";
-        combo_mouse_mclick {
-            timeout-ms = <50>;
-	    layers = <3>;
-            key-positions = <30 31>;
-            bindings = <&mkp MCLK>;
         };
     };
 	
