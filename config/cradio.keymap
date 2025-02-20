@@ -2,7 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
@@ -35,8 +35,8 @@
 	    #binding-cells = <1>;
 	    x-input-code = <INPUT_REL_X>;
 	    y-input-code = <INPUT_REL_Y>;
-	    time-to-max-speed-ms = <200>;
-	    acceleration-exponent = <2>;
+	    time-to-max-speed-ms = <300>;
+	    acceleration-exponent = <6>;
 	};
 
 	msc: mouse_scroll {
@@ -44,8 +44,8 @@
 	    #binding-cells = <1>;
 	    x-input-code = <INPUT_REL_HWHEEL>;
 	    y-input-code = <INPUT_REL_WHEEL>;
-	    time-to-max-speed-ms = <200>;
-	    acceleration-exponent = <2>;
+	    time-to-max-speed-ms = <300>;
+	    acceleration-exponent = <4>;
 	};
     };
 
@@ -138,8 +138,15 @@
         combo_middle_click {
             timeout-ms = <50>;
             key-positions = <30 31>;
-	    layers = <3>;
+	    layers = <MOU>;
             bindings = <&mkp MCLK>;
+        };
+
+        compatible = "zmk,combos";
+        combo_mouse_toggle {
+            timeout-ms = <50>;
+            key-positions = <4 14>;
+            bindings = <&tog MOU>;
         };
     };
 	
