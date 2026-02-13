@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
-#define COLEMAK 1
+#define CMK 1
 #define NAV 2
 #define MOU 3
 #define NUM 4
@@ -162,7 +162,7 @@
             >;
         };
 
-        layer_COLEMAK {
+        layer_CMK {
             bindings = <
                 &kp Q       &kp W       &kp F         &kp P          &kp B          &kp J          &kp L         &kp U        &kp Y       &kp QUOT
                 &hm LGUI A  &hm LALT R  &hm LCTRL S   &hm LSHIFT T   &kp G          &kp M          &hm LSHIFT N  &hm LCTRL E  &hm LALT I  &hm LGUI O
@@ -220,8 +220,8 @@
             bindings = <
                 &kp ESC        &none           &out OUT_TOG    &none             &bt BT_CLR       &none    &none    &none    &none    &none
                 &tog TAP       &bt BT_SEL 3    &bt BT_SEL 4    &none             &bt BT_CLR_ALL   &none    &none    &none    &none    &none
-                &none          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &none            &none    &none    &none    &none    &none
-                                               &kp DEL         &kp ENTER         &none            &none
+                &tog CMK       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &none            &none    &none    &none    &none    &none
+                                               				   &kp DEL	         &kp ENTER        &none    &none
             >;
         };
 
@@ -235,4 +235,5 @@
         };
 	};
 };
+
 
