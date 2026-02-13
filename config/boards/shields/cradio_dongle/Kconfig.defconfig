@@ -1,0 +1,9 @@
+if SHIELD_CRADIO_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Cradio Dongle"
+
+config ZMK_SPLIT
+    default y
+
+endif
